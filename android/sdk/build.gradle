@@ -11,6 +11,7 @@ plugins {
 
 apply plugin: 'com.android.library'
 apply plugin: 'checkstyle'
+apply plugin: 'com.github.dcendents.android-maven'
 
 ext.disableCov = project.hasProperty('disableCov') ? project.getProperty('disableCov') : 'false'
 if(!disableCov.toBoolean()){
